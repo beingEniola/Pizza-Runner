@@ -1,28 +1,24 @@
 # Pizza-Runner
 
-##  Problem Overview
-Danny needs assistance in cleaning and analyzing the data for Pizza Runner. The goal is to:
-Clean and prepare the data for analysis.
+###  Problem Overview
+Pizza Runner, a food delivery company, faces challenges in optimizing its operations and understanding customer preferences. Key areas for improvement include:
 
-Solve key business problems such as optimizing delivery performance, understanding customer preferences, and evaluating revenue trends.
+Delivery Efficiency: How can delivery times and runner speeds be improved?
 
-Provide actionable insights to help improve decision-making and streamline operations at Pizza Runner.
+Customer Insights: What are customer ordering patterns and preferences?
 
-📊 Project Overview
-This project focuses on analyzing operational and customer data for Pizza Runner to optimize business operations. The analysis involves cleaning data, performing essential calculations, and solving over 25 business problems to provide Danny with insights into areas such as delivery efficiency, customer behavior, and revenue generation.
+Ingredient Optimization: How can ingredient usage be optimized and costs minimized?
 
-Key objectives include:
+Revenue Analysis: How much revenue has been generated, and what’s the profit after delivery costs?
 
-Setting up and structuring the database for optimal data storage and querying.
+### Project Overview
+This project showcases my problem solving skills through the analysis of Pizza Runner data, a food delivery company. The primary objective of the project was to support business decision making by analyzing operational and customer data.
 
-Cleaning and transforming raw data to ensure integrity and readiness for analysis.
+In this project, I applied various SQL techniques, aggregate function,  joins, window functions for data analysis. I used CTEs for temporary result sets and subqueries for efficient analysis. Constraints were applied to ensure data integrity.
 
-Applying SQL concepts (e.g., JOINs, window functions, subqueries) to solve business problems.
+### Project Structure
 
-Generating actionable insights to assist in decision-making, resource allocation, and strategy optimization for Pizza Runner.
-
-🗂 Project Structure
-Database Setup: The database is created along with all necessary tables, including constraints (primary keys, foreign keys) to ensure data integrity.
+*Database Setup: The database is created along with all necessary tables, including constraints (primary keys, foreign keys) to ensure data integrity.
 
 Data Import: Sample data is inserted into the database to simulate real-world scenarios.
 
@@ -30,7 +26,8 @@ Data Cleaning: Data integrity is ensured through handling empty strings, trimmin
 
 Business Problem Solving: Over 25 business problems are addressed using SQL queries. This includes analyzing delivery performance, customer ordering trends, and financial metrics. A link to the SQL file containing these queries is provided.
 
-🔧 Methodology
+### Methodology
+
 Database Design:
 
 The first step was to design the database schema based on the business requirements, ensuring that all relevant data points (e.g., customer orders, runner deliveries, pizza recipes) were captured.
@@ -50,7 +47,3 @@ Window functions (for ranking and advanced aggregation).
 CTEs and Subqueries (for organizing complex queries).
 
 Aggregate functions (COUNT, SUM, AVG) to derive insights from the data.
-
-Deliverables:
-
-A set of SQL queries and the analysis of the data was provided to help Danny make informed decisions about Pizza Runner’s operations. This includes performance metrics, customer insights, and financial evaluations.
