@@ -18,25 +18,22 @@ In this project, I applied various SQL techniques, aggregate function,  joins, w
 
 ### Project Structure
 
-*Database Setup: The database is created along with all necessary tables, including constraints (primary keys, foreign keys) to ensure data integrity.
-
-Data Import: Sample data is inserted into the database to simulate real-world scenarios.
-
-Data Cleaning: Data integrity is ensured through handling empty strings, trimming spaces, and removing inconsistencies. A separate file contains the specific data cleaning steps.
-
-Business Problem Solving: Over 25 business problems are addressed using SQL queries. This includes analyzing delivery performance, customer ordering trends, and financial metrics. A link to the SQL file containing these queries is provided.
+* Database Setup: The database is created along with all necessary tables, including constraints to ensure data integrity.
+* Data Import: Sample data is inserted into the database to simulate real-world scenarios.
+* Data Cleaning: Data integrity is ensured through handling empty strings, trimming spaces, and removing inconsistencies. 
+* Business Problem Solving: Over 25 business problems are addressed using SQL queries. This includes analyzing delivery performance, customer ordering trends, and financial metrics. 
 
 ### Methodology
 
-Database Design:
+* Database Design:
 
 The first step was to design the database schema based on the business requirements, ensuring that all relevant data points (e.g., customer orders, runner deliveries, pizza recipes) were captured.
 
-Data Cleaning:
+* Data Cleaning:
 
 The raw data was cleaned to ensure that empty strings, unnecessary spaces, and inconsistencies were addressed. This step was crucial for accurate analysis.
 
-SQL Analysis:
+* SQL Analysis:
 
 SQL queries were used to solve key business problems. This involved using a range of techniques including:
 
