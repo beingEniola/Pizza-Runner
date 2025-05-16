@@ -20,10 +20,9 @@ Pizza Runner, a food delivery service, aim to improve overall efficiency, reduce
 * Data Cleaning: Handling of empty strings, trimming spaces, and removing inconsistencies. 
 * Business Problem Solving: I solved Over 2o business problems.
 
-
 ### Database Setup
 
-I created a database for the company and four tables for runners, customer_orders , runner_orders, pizza_names, pizza_recipes and pizza_toppings records.
+I created a database for the company and six tables for runners, customer_orders , runner_orders, pizza_names, pizza_recipes and pizza_toppings records.
 
 ```sql
 -- create database
@@ -67,7 +66,7 @@ This link has my full data importation codes is [here]()
 
 I designed an ERD for the database
 
-![pizza runner ERD](https://github.com/user-attachments/assets/b6ac4604-16be-46d0-8f62-40c13af60b79)
+![pizza runner ERD](https://github.com/user-attachments/assets/f102cd34-8120-4d3c-9362-2af38017c1d9)
 
 ### Data Cleaning
 
@@ -98,10 +97,10 @@ Full codes on how I cleaned the data is [here](https://github.com/beingEniola/Pi
 
 In this analysis, I addressed 25 business questions covering the following focus areas:
 
-1. Pizza Metrics: performance and sales trends.
-2. Runner and Customer Experience: order fulfillment and delivery efficiency.
-3. Ingredient Optimization: pizza compositions, popular extras, exclusions, and total ingredient consumption.
-4. Pricing and Ratings: Revenue and profitability analysis
+A. Pizza Metrics: performance and sales trends.
+B. Runner and Customer Experience: order fulfillment and delivery efficiency.
+C. Ingredient Optimization: pizza compositions, popular extras, exclusions, and total ingredient consumption.
+D. Pricing and Ratings: Revenue and profitability analysis
 
 #### A. Pizza Metrics
 
@@ -133,7 +132,7 @@ ORDER BY customer_id
 | 104         | 3                | 0                 |
 | 105         | 0                | 1                 |
 
-#### Runner and Customer Experience
+#### B. Runner and Customer Experience
 
 ```sql
 -- What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order? 
