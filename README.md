@@ -97,10 +97,10 @@ Full codes on how I cleaned the data can be found [here](https://github.com/bein
 
 In this analysis, I addressed 25 business questions covering the following focus areas:
 
-A. Pizza Metrics: performance and sales trends.
-B. Runner and Customer Experience: order fulfillment and delivery efficiency.
-C. Ingredient Optimization: pizza compositions, popular extras, exclusions, and total ingredient consumption.
-D. Pricing and Ratings: Revenue and profitability analysis
+1. Pizza Metrics: performance and sales trends.
+2. Runner and Customer Experience: order fulfillment and delivery efficiency.
+3. Ingredient Optimization: pizza compositions, popular extras, exclusions, and total ingredient consumption.
+4. Pricing and Ratings: Revenue and profitability analysis
 
 #### A. Pizza Metrics
 
