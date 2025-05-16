@@ -89,12 +89,13 @@ In this analysis, I addressed 25 business questions covering the following focus
 
 SELECT COUNT(order_id) 
 FROM customer_orders;
+```
 
 | count| 
 |------|
 | 14 | 
 
-
+```sql
 -- Q.5 How many Vegetarian and Meatlovers were ordered by each customer?
 SELECT customer_id, 
 	SUM(CASE WHEN pizza_id = 1 THEN 1 ELSE 0 END) AS meatlovers_orders, 
