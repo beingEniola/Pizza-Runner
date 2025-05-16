@@ -2,7 +2,8 @@ SELECT * FROM runners; --valid data
 
 SELECT * FROM runner_orders; --dirty column exists
 
--- clean dirty columns, replace 'null' to null, trim 
+-- clean dirty columns, replace empty string and 'null' to null, remove the km in distance column, 
+-- remove the minutes and min in duration column
 UPDATE runner_orders
 SET 
   pickup_time = CASE WHEN pickup_time = 'null' THEN NULL ELSE pickup_time END,
@@ -18,7 +19,7 @@ SET
   					  WHEN cancellation = '' THEN NULL 
 					  ELSE cancellation END;
   
--- change datatype
+-- change the datatype of pickup_time and distance columns
 ALTER TABLE runner_orders
 ALTER COLUMN pickup_time TYPE TIMESTAMP USING pickup_time::TIMESTAMP;
 
@@ -37,7 +38,7 @@ SELECT * FROM pizza_topping; --valid data
 
 SELECT * FROM customer_orders; -- needs cleaning
 
--- change null to Null
+-- change string value 'null' to Null, change empty string to Null
 
 UPDATE customer_orders
 SET 
@@ -47,7 +48,8 @@ SET
 	extras = CASE WHEN extras = 'null' THEN NULL
 	              WHEN extras = '' THEN NULL 
 				  ELSE extras END;
-	
+
+-- change the datatype of order_time
 ALTER TABLE customer_orders
 ALTER COLUMN order_time TYPE TIMESTAMP USING order_time::TIMESTAMP;
 
