@@ -7,10 +7,10 @@ This project showcases my ability to solve business problems by analyzing data f
 ##  Problem Overview
 Pizza Runner, a food delivery service, aim to improve overall efficiency, reduce costs, and increase profitability. They require assistance to clean their data and perform critical analysis to better direct their runners and optimize operations. The key questions to address are:
 
-* Delivery Efficiency: How can we improve delivery times and the speed of our runners?
-* Customer Insights: What are the patterns in customer orders, and what are their preferences?
-* Ingredient Optimization: How can we optimize the use of ingredients and minimize costs?
-* Revenue Analysis: What is the revenue generated, and how much profit is made after delivery costs?
+* How can we improve delivery times and the speed of our runners?
+* What are the patterns in customer orders, and what are their preferences?
+* How can we optimize the use of ingredients and minimize costs?
+* What is the revenue generated, and how much profit is made after delivery costs?
 
 
 ## Project Structure
@@ -73,9 +73,29 @@ SET
 ```
 Full codes on how I cleaned the data is [here](https://github.com/beingEniola/Pizza-Runner/blob/main/pizza%20runner%20data%20cleaning.sql) 
 
-### Business Problem. 
+### Analysis. 
 
+In this analysis, I addressed 25 business questions covering the following focus areas:
 
-	
+1. Pizza Metrics: performance and sales trends.
+2. Runner and Customer Experience: order fulfillment and delivery efficiency.
+3. Ingredient Optimization: pizza compositions, popular extras, exclusions, and total ingredient consumption.
+4. Pricing and Ratings: Revenue and profitability analysis
 
+```sql
+-- A. Pizza Metrics
+
+-- Q.1 How many pizzas were ordered? '
+
+SELECT COUNT(order_id) 
+FROM customer_orders;
+
+-- Q.5 How many Vegetarian and Meatlovers were ordered by each customer?
+SELECT customer_id, 
+	SUM(CASE WHEN pizza_id = 1 THEN 1 ELSE 0 END) AS meatlovers_orders, 
+    SUM(CASE WHEN pizza_id = 2 THEN 1 ELSE 0 END) AS vegeterians_orders
+FROM customer_orders 
+GROUP BY customer_id
+ORDER BY customer_id
+```
 
