@@ -1,4 +1,4 @@
-# Pizza-Runner
+# Pizza Runner - End-to-End Operational, Sales, and Product Analytics for a Food Delivery Business
 
 ## Project Overview
 This project showcases my ability to solve business problems by analyzing data from Pizza Runner. In this project, I applied a range of SQL techniques, including aggregate functions, joins, window functions, and CTEs (Common Table Expressions), to analyze and solve business problems.
@@ -138,4 +138,4 @@ GROUP BY runner_id;
 | 2         | 20                  |
 | 3         | 10                  |
 
-FOR the full analysis please click [here]()
+For the full analysis please click [here](https://github.com/beingEniola/Pizza-Runner/blob/dc802eb614e782b08d162d3b4fa50407902e56f0/pizza%20runner%20analysis.sql)
