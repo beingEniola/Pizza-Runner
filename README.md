@@ -18,7 +18,7 @@ Pizza Runner, a food delivery service, aim to improve overall efficiency, reduce
 * Database Setup: I created a database along with all necessary tables, including constraints to ensure data integrity.
 * Data Import: Insertion of sample dataset
 * Data Cleaning: Handling of empty strings, trimming spaces, and removing inconsistencies. 
-* Business Problem Solving: I solved Over 2o business problems.
+* Business Problem Solving: I solved Over 20 business problems.
 
 ### Database Setup
 
@@ -38,7 +38,7 @@ CREATE TABLE runners(
 	);
 ```
 
-Full codes on how I created all the needed table is [here](https://github.com/beingEniola/Pizza-Runner/blob/ccc5622f159a5760a3a9516343ee6033c5861af6/Pizza%20runner%20Schema.sql)
+Full codes on how I created all the needed table can be found [here](https://github.com/beingEniola/Pizza-Runner/blob/ccc5622f159a5760a3a9516343ee6033c5861af6/Pizza%20runner%20Schema.sql)
 
 ### Data Import
 
@@ -60,7 +60,7 @@ VALUES
   ('9', '2', 'null', 'null', 'null', 'Customer Cancellation'),
   ('10', '1', '2020-01-11 18:50:20', '10km', '10minutes', 'null');
 ```
-This link has my full data importation codes is [here]()
+This link has my full data importation codes [here]()
 
 ### ERD 
 
@@ -91,7 +91,7 @@ SET
 				  ELSE extras END;
 
 ```
-Full codes on how I cleaned the data is [here](https://github.com/beingEniola/Pizza-Runner/blob/main/pizza%20runner%20data%20cleaning.sql) 
+Full codes on how I cleaned the data can be found [here](https://github.com/beingEniola/Pizza-Runner/blob/main/pizza%20runner%20data%20cleaning.sql) 
 
 ### Analysis. 
 
