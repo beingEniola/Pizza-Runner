@@ -115,8 +115,7 @@ ORDER BY customer_id
 #### Runner and Customer Experience
 
 ```sql
-/* Q.12 What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ 
-to pickup the order? */
+-- What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order? 
 
 WITH time_taken AS (
     SELECT r.runner_id, r.pickup_time, c.order_time, 
@@ -133,4 +132,10 @@ SELECT runner_id, ROUND(AVG(pickup_minutes)::NUMERIC) AS avg_pickup_duration
 FROM time_taken
 GROUP BY runner_id;
 ```
+| runner_id | avg_pickup_duration |
+|-----------|---------------------|
+| 1         | 14                  |
+| 2         | 20                  |
+| 3         | 10                  |
 
+FOR the full analysis please click [here]()
