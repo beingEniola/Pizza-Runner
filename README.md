@@ -1,10 +1,10 @@
 # Pizza-Runner
 
-### Project Overview
+## Project Overview
 This project showcases my ability to solve business problems by analyzing data from Pizza Runner. In this project, I applied a range of SQL techniques, including aggregate functions, joins, window functions, and CTEs (Common Table Expressions), to analyze and solve business problems.
 
 
-###  Problem Overview
+##  Problem Overview
 Pizza Runner, a food delivery service, aim to improve overall efficiency, reduce costs, and increase profitability. They require assistance to clean their data and perform critical analysis to better direct their runners and optimize operations. The key questions to address are:
 
 * Delivery Efficiency: How can we improve delivery times and the speed of our runners?
@@ -13,7 +13,7 @@ Pizza Runner, a food delivery service, aim to improve overall efficiency, reduce
 * Revenue Analysis: What is the revenue generated, and how much profit is made after delivery costs?
 
 
-### Project Structure
+## Project Structure
 
 * Database Setup: I created a database along with all necessary tables, including constraints to ensure data integrity.
 * Data Import: Insertion of sample dataset
@@ -21,7 +21,7 @@ Pizza Runner, a food delivery service, aim to improve overall efficiency, reduce
 * Business Problem Solving: I solved Over 2o business problems.
 
 
-#### Database Setup
+### Database Setup
 
 I created a database for the company and four tables for runners, customer_orders , runner_orders, pizza_names, pizza_recipes and pizza_toppings records.
 
@@ -39,16 +39,16 @@ CREATE TABLE runners(
 	);
 ```
 
-Full codes on how I created all the needed table is [here]()
+Full codes on how I created all the needed table is [here](https://github.com/beingEniola/Pizza-Runner/blob/ccc5622f159a5760a3a9516343ee6033c5861af6/Pizza%20runner%20Schema.sql)
 
-#### Data Import
+### Data Import
 
 I inserted the data into the tables 
 
 ```sql
 
 ```
-#### Data Cleaning
+### Data Cleaning
 
 After exploring the imported data, I noticed some inconsistencies which are:
 
@@ -73,7 +73,7 @@ SET
 ```
 Full codes on how I cleaned the data is [here](https://github.com/beingEniola/Pizza-Runner/blob/main/pizza%20runner%20data%20cleaning.sql) 
 
-#### Business Problem. 
+### Business Problem. 
 
 
 	
