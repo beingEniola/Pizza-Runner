@@ -60,7 +60,7 @@ VALUES
   ('9', '2', 'null', 'null', 'null', 'Customer Cancellation'),
   ('10', '1', '2020-01-11 18:50:20', '10km', '10minutes', 'null');
 ```
-This link has my full data importation codes [here]()
+This link has my full data importation codes [here](https://github.com/beingEniola/Pizza-Runner/blob/ec4997ab892ae0d84efb6f67fdf111cbb52bc469/pizza%20runner%20data%20import.sql)
 
 ### ERD 
 
