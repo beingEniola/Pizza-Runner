@@ -82,10 +82,10 @@ In this analysis, I addressed 25 business questions covering the following focus
 3. Ingredient Optimization: pizza compositions, popular extras, exclusions, and total ingredient consumption.
 4. Pricing and Ratings: Revenue and profitability analysis
 
-```sql
--- A. Pizza Metrics
+#### A. Pizza Metrics
 
--- Q.1 How many pizzas were ordered? '
+```sql
+--  How many pizzas were ordered? 
 
 SELECT COUNT(order_id) 
 FROM customer_orders;
@@ -96,12 +96,41 @@ FROM customer_orders;
 | 14 | 
 
 ```sql
--- Q.5 How many Vegetarian and Meatlovers were ordered by each customer?
+--  How many Vegetarian and Meatlovers were ordered by each customer?
 SELECT customer_id, 
 	SUM(CASE WHEN pizza_id = 1 THEN 1 ELSE 0 END) AS meatlovers_orders, 
     SUM(CASE WHEN pizza_id = 2 THEN 1 ELSE 0 END) AS vegeterians_orders
 FROM customer_orders 
 GROUP BY customer_id
 ORDER BY customer_id
+```
+| customer_id | meatlovers_orders | vegeterians_orders |
+|-------------|------------------|-------------------|
+| 101         | 2                | 1                 |
+| 102         | 2                | 1                 |
+| 103         | 3                | 1                 |
+| 104         | 3                | 0                 |
+| 105         | 0                | 1                 |
+
+#### Runner and Customer Experience
+
+```sql
+/* Q.12 What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ 
+to pickup the order? */
+
+WITH time_taken AS (
+    SELECT r.runner_id, r.pickup_time, c.order_time, 
+        EXTRACT(MINUTE FROM AGE(r.pickup_time,c.order_time)) AS pickup_minutes
+FROM runner_orders r
+    JOIN customer_orders c
+    ON r.order_id = c.order_id
+WHERE r.cancellation IS NULL
+GROUP BY r.runner_id, r.pickup_time, c.order_time
+ORDER BY r.runner_id
+)
+
+SELECT runner_id, ROUND(AVG(pickup_minutes)::NUMERIC) AS avg_pickup_duration
+FROM time_taken
+GROUP BY runner_id;
 ```
 
