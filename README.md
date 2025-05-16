@@ -71,7 +71,7 @@ SET
 				  ELSE extras END;
 
 ```
-Full codes on how I cleaned the data is [here]() 
+Full codes on how I cleaned the data is [here](https://github.com/beingEniola/Pizza-Runner/blob/main/pizza%20runner%20data%20cleaning.sql) 
 
 #### Business Problem. 
 
