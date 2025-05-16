@@ -1,4 +1,4 @@
-# Pizza Runner - End-to-End Operational, Sales, and Product Analytics for a Food Delivery Business
+# Pizza Runner - Sales & Operational Analytics for a Food Delivery Business
 
 ## Project Overview
 This project showcases my ability to solve business problems by analyzing data from Pizza Runner. In this project, I applied a range of SQL techniques, including aggregate functions, joins, window functions, and CTEs (Common Table Expressions), to analyze and solve business problems.
